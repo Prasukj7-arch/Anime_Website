@@ -1,0 +1,79 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    height: auto;
+    background: linear-gradient(to bottom, #A8CFFF, #6B9CD6, #3A5F99);
+}
+body {
+    background: linear-gradient(to bottom, #A8CFFF, #6B9CD6, #3A5F99);
+    color: #f0f0f0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header {
+    background-color: #4E6688;
+    color: #ffffff;
+}
+#heading {
+    color: #405d85;
+}
+
+/* Card container */
+.card.card-cover {
+    height: 450px;
+    width: 100%;
+    padding: 0  ;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: #3A5F99; /* Matches header */
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+/* Image section inside card */
+.card.card-cover > .card.card-cover {
+    height: 300px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    margin: 0;
+}
+
+
+/* Title area */
+.card .d-flex {
+    height: 150px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3A5F99; /* Darker tone for contrast */
+    text-align: center;
+}
+
+/* Row layout: centered cards */
+.row.row-cols-lg-4 > * {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+/* Text shadow for readability */
+.text-shadow-1 {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+/* Padding for card section */
+#custom-cards {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}

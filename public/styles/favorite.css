@@ -1,0 +1,138 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    height: 100%;
+    background: linear-gradient(to bottom, #A8CFFF, #6B9CD6, #3A5F99);
+}
+body {
+    height: 100%;
+    background: linear-gradient(to bottom, #A8CFFF, #6B9CD6, #3A5F99);
+    color: #f0f0f0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header */
+header {
+    background-color: #4E6688;
+    color: #ffffff;
+}
+
+#head header .container {
+    max-width: 100%;
+}
+
+/* Links and logo */
+a.text-white.text-decoration-none {
+    color: #f0f0f0;
+}
+
+a.text-white.text-decoration-none:hover {
+    color: #cbd6e6;
+    text-decoration: none;
+}
+
+/* Search input */
+.form-control-dark.text-bg-dark {
+    background-color: #3A5F99;
+    border: 1px solid #2e4a7a;
+    color: #f0f0f0;
+}
+
+.form-control-dark.text-bg-dark::placeholder {
+    color: #cbd6e6;
+}
+
+/* User dropdown button */
+.btn-outline-light {
+    border-color: #f0f0f0;
+    color: #f0f0f0;
+}
+
+.btn-outline-light:hover, .btn-outline-light:focus {
+    background-color: #2e4a7a;
+    border-color: #cbd6e6;
+    color: #ffffff;
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+    background-color: #3A5F99;
+    border: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+}
+
+.dropdown-menu .dropdown-item {
+    color: #f0f0f0;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.dropdown-menu .dropdown-item:hover, 
+.dropdown-menu .dropdown-item:focus {
+    background-color: #2e4a7a;
+    color: #ffffff;
+}
+
+/* Card container */
+#custom-cards {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+/* Card styles - consistent with your other CSS */
+.card.card-cover {
+    height: 450px;
+    width: 100%;
+    padding: 0;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: #3A5F99; /* Matches header */
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+/* Inner image section */
+.card.card-cover > .card.card-cover {
+    height: 380px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    margin: 0;
+}
+
+/* Title area */
+.card .d-flex {
+    height: 70px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3A5F99; /* Darker tone for contrast */
+    text-align: center;
+}
+
+/* Row layout: centered cards */
+.row.row-cols-lg-4 > * {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+/* Text shadow for readability */
+.text-shadow-1 {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+/* No favorites message */
+#custom-cards p.text-center {
+    font-size: 1.25rem;
+    margin-top: 2rem;
+    color: #d1d9f0;
+}

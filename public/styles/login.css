@@ -1,0 +1,10 @@
+body {
+    background: linear-gradient(to bottom, #A8CFFF, #6B9CD6, #3A5F99);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1, .terms {
+    color: #3A5F99;
+}

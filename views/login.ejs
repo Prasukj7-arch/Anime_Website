@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/login.css">
+</head>
+<body>
+    <div class="modal modal-sheet position-static d-block p-4 py-md-5" tabindex="-1" role="dialog" id="modalLogin">
+        <div class="modal-dialog">
+            <div class="modal-content rounded-4 shadow">
+                <div class="modal-header p-5 pb-4 border-bottom-0">
+                    <h1 class="fw-bold mb-0 fs-2">Login to your account</h1>
+                </div>
+
+                <div class="modal-body p-5 pt-0">
+                    <form method="post">
+                        <div class="form-floating mb-3">
+                            <input type="email" name="email" class="form-control rounded-3" id="loginEmail" placeholder="name@example.com">
+                            <label for="loginEmail">Email address</label>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <input type="password" name="password" class="form-control rounded-3" id="loginPassword" placeholder="Password">
+                            <label for="loginPassword">Password</label>
+                        </div>
+
+                        <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit" style="background-color: #4E6688;">Login</button>
+                        <small class="terms">Don't have an account? <a href="/signup" style="color: #3A5F99;">Sign up</a></small>
+
+                        <hr class="my-4 terms">
+
+                        <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit">
+                            <img src="images/google.png" alt="google" width="20" style="padding-right: 2px;">
+                            Login with Google
+                        </button>
+
+                        <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit">
+                            <img src="images/microsoft.png" alt="microsoft" width="20" style="padding-right: 2px;">
+                            Login with Facebook
+                        </button>
+
+                        <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit">
+                            <img src="images/github.png" alt="github" width="20" style="padding-right: 2px;">
+                            Login with GitHub
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
